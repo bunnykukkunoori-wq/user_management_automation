@@ -2,7 +2,7 @@
 
 This project provides an automated way to create and manage Linux user accounts using a bash script.
 
-It is designed for SysOps, DevOps, and IT administrators who need to onboard multiple users quickly and securely.
+It is designed for SysOps / DevOps engineers who want fast, secure, repeatable user provisioning — especially inside Windows Subsystem for Linux (WSL) environments.
 
 # The script reads a user input file and automatically:
 
@@ -102,7 +102,7 @@ manoj; dev,www-data
 
 # Rules:
 
-● Whitespace is ignored
+● Whitespace is ignored.
 
 ● Lines beginning with # are ignored.
 
@@ -403,6 +403,12 @@ Everything runs locally inside WSL, reducing attack surface.
 2025-11-12 16:15:24 - ===== User provisioning completed =====
 
 2025-11-12 16:15:24 - Copied log output to sample_output/user_management.log.sample for review.
+
+ # Passwords.txt
+
+sairam:wGgRY4IcNip8
+
+saideep:B8QvJePTakMn
 
 # Author
 
