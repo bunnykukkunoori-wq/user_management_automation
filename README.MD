@@ -4,7 +4,7 @@ This project provides an automated way to create and manage Linux user accounts 
 
 It is designed for SysOps, DevOps, and IT administrators who need to onboard multiple users quickly and securely.
 
-✪ # The script reads a user input file and automatically:
+# The script reads a user input file and automatically:
 
 ✦ Creates users and required groups
 
