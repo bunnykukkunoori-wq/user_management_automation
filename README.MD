@@ -18,7 +18,7 @@ It is designed for SysOps, DevOps, and IT administrators who need to onboard mul
 
 # Features
 
- ## Automated User Creation:
+ #### Automated User Creation:
 
 Reads entries from an input file in the format:
 
