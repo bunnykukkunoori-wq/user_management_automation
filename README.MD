@@ -112,7 +112,7 @@ Groups may be empty (allowed)
 
 # How the Script Works (Step-by-Step)
 
-1️.Pre-checks:
+▪ Pre-checks:
 
 Must be run as root
 
@@ -124,7 +124,7 @@ Creates secure files:
 
 /var/log/user_management.log (600)
 
-2️.Reads Each Line:
+▪ Reads Each Line:
 
 Removes whitespace
 
@@ -132,13 +132,13 @@ Skips comments and empty lines
 
 Extracts username and groups
 
-3️.Group Handling:
+▪ Group Handling:
 
 Ensures all listed groups exist
 
 Creates missing groups automatically
 
-4️.User Handling:
+▪ User Handling:
 
 When the user does not exist:
 
@@ -164,7 +164,7 @@ Corrects home directory permissions
 
 Logs the action
 
-5️.Logging:
+▪ Logging:
 
 Every action is logged with timestamps:
 
