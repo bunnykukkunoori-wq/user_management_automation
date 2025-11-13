@@ -18,7 +18,7 @@ It is designed for SysOps, DevOps, and IT administrators who need to onboard mul
 
 # Features
 
-1.Automated User Creation:
+ ## Automated User Creation:
 
 Reads entries from an input file in the format:
 
@@ -102,13 +102,13 @@ manoj; dev,www-data
 
 # Rules:
 
-Whitespace is ignored
+● Whitespace is ignored
 
-Lines beginning with # are ignored
+● Lines beginning with # are ignored
 
-Groups are comma-separated
+● Groups are comma-separated
 
-Groups may be empty (allowed)
+● Groups may be empty (allowed)
 
 # How the Script Works (Step-by-Step)
 
