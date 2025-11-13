@@ -99,7 +99,7 @@ siyoni; sudo
 
 manoj; dev,www-data
 
-Rules:
+# Rules:
 
 Whitespace is ignored
 
@@ -189,9 +189,7 @@ sudo ./create_users.sh employees.txt
 1.High-Level Architecture:
 
  ┌──────────────────────────────────────────┐
-
  │           employees.txt Input            │
-
  └──────────────────────────────────────────┘
 
                     │
