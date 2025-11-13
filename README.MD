@@ -71,17 +71,13 @@ user-management-automation/
 
 # Files Explained
 
-File	                                                 Purpose
-
-create_users.sh	                                    Main automation script
-
-employees.txt	                                    Input file containing usernames and groups
-
-passwords.txt	                                    Generated passwords for new users
-
-user_management.log	                                Full activity log
-
-sample_output/user_management.log.sample	        Log copy for documentation
+| File                                      | Purpose                                  |
+|-------------------------------------------|------------------------------------------|
+| `create_users.sh`                         | Main automation script |
+| `employees.txt`                           | Input file containing usernames & groups |
+| `passwords.txt`                           | Generated passwords for new users        |
+| `user_management.log`                     | Full activity log                        |
+| `sample_output/user_management.log.sample`| Log copy for documentation    
 
 # Input File Format (employees.txt)
 
@@ -186,38 +182,7 @@ sudo ./create_users.sh employees.txt
 
 # Design View
 
-1.High-Level Architecture:
-
- ┌──────────────────────────────────────────┐
- │           employees.txt Input            │
- └──────────────────────────────────────────┘
-                    │
-                    ▼
- ┌──────────────────────────────────────────┐
- │          create_users.sh Script          │
- └──────────────────────────────────────────┘
-                    │
-    ┌─────────────────────────────────────────────────────┐
-    │               Internal Processing Pipeline           │
-    └─────────────────────────────────────────────────────┘
-      │          │               │               │
-      ▼          ▼               ▼               ▼
-  Create     Create         Generate        Set Home Dir
-   User       Groups         Passwords       Permissions
-      │          │               │               │
-      └──────────┴───────────────┴───────────────┘
-                    │
-                    ▼
-    ┌──────────────────────────────────────────────┐
-    │   Store Passwords + Logs in Project Folder    │
-    └──────────────────────────────────────────────┘
-                    │
-                    ▼
-        ┌────────────────────────────┐
-        │  sample_output/log.sample  │
-        └────────────────────────────┘
-
-2.Core Components:
+1.Core Components:
 
 A) Input Layer
 
@@ -324,11 +289,9 @@ Generated passwords are stored only in:
 
 passwords.txt
 
-
 This file is created with:
 
 chmod 600
-
 
 meaning only the root user can read/write the file.
 
@@ -382,7 +345,6 @@ No unsafe operations are executed for non-root users.
 After distributing account credentials, delete the password file:
 
 sudo rm passwords.txt
-
 
 or archive it securely in offline storage.
 
