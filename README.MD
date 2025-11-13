@@ -221,6 +221,72 @@ Full detailed log with timestamps.
 
 A clean copy for documentation or submission.
 
+# Purpose of the Script
+
+####★ Automate large-scale user provisioning
+
+Instead of manually creating users and groups one by one, the script reads from an employees.txt file and automatically handles every user entry.Automate large-scale user provisioning
+
+Instead of manually creating users and groups one by one, the script reads from an employees.txt file and automatically handles every user entry.
+
+####★ Ensure system consistency
+
+Every user is created with:
+
+Correct primary group.
+
+Correct secondary groups.
+
+A secure home directory.
+
+Proper ownership and permissions.
+
+####★ Generate and store secure passwords
+
+For new users, the script:
+
+Creates a strong random password.
+
+Stores it safely in passwords.txt (root-only access).
+
+####★ Maintain a detailed audit trail
+
+A complete timestamped log is generated in:
+
+user_management.log
+
+sample_output/user_management.log.sample
+
+This is critical for compliance, debugging, and review.
+
+####★ Handle WSL safely
+
+Because WSL does not allow modifying system passwords via /etc/shadow, the script:
+
+Detects WSL.
+
+Stores passwords securely.
+
+Skips unsafe password modifications.
+
+# Design Highlights
+
+✦ Modular, Function-Driven Architecture.
+
+✦ Fully WSL-Compatible Design
+
+✦ Robust Input Handling
+
+✦ Idempotent Execution
+
+✦ Security-First Approach
+
+✦ Comprehensive Logging System
+
+✦ Clear Project Output Structure
+
+✦ Designed for Scalability 
+
 # Security Considerations
 
 Security is a core focus of this user automation project.
