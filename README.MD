@@ -4,17 +4,17 @@ This project provides an automated way to create and manage Linux user accounts 
 
 It is designed for SysOps, DevOps, and IT administrators who need to onboard multiple users quickly and securely.
 
-#The script reads a user input file and automatically:
+✪ # The script reads a user input file and automatically:
 
-1.Creates users and required groups
+✦ Creates users and required groups
 
-2.Sets secure passwords
+✦ Sets secure passwords
 
-3.Configures home directories
+✦ Configures home directories
 
-4.Logs all actions
+✦ Logs all actions
 
-5.Generates documentation-ready sample log output
+✦ Generates documentation-ready sample log output
 
 # Features
 
@@ -112,7 +112,7 @@ Groups may be empty (allowed)
 
 # How the Script Works (Step-by-Step)
 
-▪ Pre-checks:
+● Pre-checks:
 
 Must be run as root
 
@@ -124,7 +124,7 @@ Creates secure files:
 
 /var/log/user_management.log (600)
 
-▪ Reads Each Line:
+● Reads Each Line:
 
 Removes whitespace
 
@@ -132,13 +132,13 @@ Skips comments and empty lines
 
 Extracts username and groups
 
-▪ Group Handling:
+● Group Handling:
 
 Ensures all listed groups exist
 
 Creates missing groups automatically
 
-▪ User Handling:
+● User Handling:
 
 When the user does not exist:
 
@@ -164,7 +164,7 @@ Corrects home directory permissions
 
 Logs the action
 
-▪ Logging:
+● Logging:
 
 Every action is logged with timestamps:
 
@@ -201,7 +201,7 @@ username
 
 group list
 
-# B) Processing Layer:
+# B) Processing Layer
 
 Handles all system operations:
 
