@@ -1,0 +1,8 @@
+# Developers
+light; sudo,dev,www-data
+siyoni; sudo
+manoj; dev,www-data
+sairam; dev,WWW-data
+saideep; dev,WWW-data
+
+

@@ -1,0 +1,72 @@
+2025-11-13 06:43:25 - ===== Starting User Provisioning =====
+2025-11-13 06:43:25 - Password file path: /mnt/c/Users/bunny/OneDrive/Desktop/users management/passwords.txt
+2025-11-13 06:43:25 - Log file path: /mnt/c/Users/bunny/OneDrive/Desktop/users management/user_management.log
+2025-11-13 06:43:25 - Processing user: light
+2025-11-13 06:43:25 - User exists → updating
+2025-11-13 06:43:25 - Added light to 0
+2025-11-13 06:43:25 - Home fixed
+2025-11-13 06:43:25 - SKIP: No password change for existing user
+2025-11-13 06:43:25 - Processing user: siyoni
+2025-11-13 06:43:25 - User exists → updating
+2025-11-13 06:43:25 - Added siyoni to 0
+2025-11-13 06:43:25 - Home fixed
+2025-11-13 06:43:25 - SKIP: No password change for existing user
+2025-11-13 06:43:25 - Processing user: manoj
+2025-11-13 06:43:25 - User exists → updating
+2025-11-13 06:43:25 - Added manoj to 0
+2025-11-13 06:43:25 - Home fixed
+2025-11-13 06:43:25 - SKIP: No password change for existing user
+2025-11-13 06:43:25 - ===== User Provisioning Completed =====
+2025-11-13 06:44:09 - ===== Starting User Provisioning =====
+2025-11-13 06:44:09 - Password file path: /mnt/c/Users/bunny/OneDrive/Desktop/users management/passwords.txt
+2025-11-13 06:44:09 - Log file path: /mnt/c/Users/bunny/OneDrive/Desktop/users management/user_management.log
+2025-11-13 06:44:09 - Processing user: light
+2025-11-13 06:44:09 - User exists → updating
+2025-11-13 06:44:09 - Added light to 0
+2025-11-13 06:44:09 - Home fixed
+2025-11-13 06:44:09 - SKIP: No password change for existing user
+2025-11-13 06:44:09 - Processing user: siyoni
+2025-11-13 06:44:09 - User exists → updating
+2025-11-13 06:44:09 - Added siyoni to 0
+2025-11-13 06:44:09 - Home fixed
+2025-11-13 06:44:09 - SKIP: No password change for existing user
+2025-11-13 06:44:09 - Processing user: manoj
+2025-11-13 06:44:09 - User exists → updating
+2025-11-13 06:44:09 - Added manoj to 0
+2025-11-13 06:44:09 - Home fixed
+2025-11-13 06:44:09 - SKIP: No password change for existing user
+2025-11-13 06:44:09 - Processing user: sairam
+2025-11-13 06:44:09 - Created user: sairam
+2025-11-13 06:44:09 - Generated password for sairam: yxQCW1S2Kse.
+2025-11-13 06:44:09 - Saved password to file
+2025-11-13 06:44:09 - WSL detected → password NOT applied
+2025-11-13 06:44:10 - ===== User Provisioning Completed =====
+2025-11-13 08:49:34 - ===== Starting User Provisioning =====
+2025-11-13 08:49:34 - Password file path: /mnt/c/Users/bunny/OneDrive/Desktop/users management/passwords.txt
+2025-11-13 08:49:34 - Log file path: /mnt/c/Users/bunny/OneDrive/Desktop/users management/user_management.log
+2025-11-13 08:49:34 - Processing user: light
+2025-11-13 08:49:34 - User exists → updating
+2025-11-13 08:49:34 - Added light to 0
+2025-11-13 08:49:34 - Home fixed
+2025-11-13 08:49:34 - SKIP: No password change for existing user
+2025-11-13 08:49:34 - Processing user: siyoni
+2025-11-13 08:49:34 - User exists → updating
+2025-11-13 08:49:34 - Added siyoni to 0
+2025-11-13 08:49:34 - Home fixed
+2025-11-13 08:49:34 - SKIP: No password change for existing user
+2025-11-13 08:49:34 - Processing user: manoj
+2025-11-13 08:49:34 - User exists → updating
+2025-11-13 08:49:35 - Added manoj to 0
+2025-11-13 08:49:35 - Home fixed
+2025-11-13 08:49:35 - SKIP: No password change for existing user
+2025-11-13 08:49:35 - Processing user: sairam
+2025-11-13 08:49:35 - Created user: sairam
+2025-11-13 08:49:35 - Generated password for sairam: wGgRY4IcNip8
+2025-11-13 08:49:35 - Saved password to file
+2025-11-13 08:49:35 - WSL detected → password NOT applied
+2025-11-13 08:49:35 - Processing user: saideep
+2025-11-13 08:49:35 - Created user: saideep
+2025-11-13 08:49:35 - Generated password for saideep: B8QvJePTakMn
+2025-11-13 08:49:35 - Saved password to file
+2025-11-13 08:49:35 - WSL detected → password NOT applied
+2025-11-13 08:49:35 - ===== User Provisioning Completed =====
