@@ -17,13 +17,14 @@ It is designed for SysOps, DevOps, and IT administrators who need to onboard mul
 5.Generates documentation-ready sample log output
 
 # Features
-1.Automated User Creation
+
+1.Automated User Creation:
 
 Reads entries from an input file in the format:
 
 username;group1,group2,group3
 
-2.Group Management
+2.Group Management:
 
 Creates missing groups
 
@@ -31,13 +32,13 @@ Adds users to secondary groups
 
 Handles existing users gracefully
 
-3.Secure Password Generation
+3.Secure Password Generation:
 
 Creates a random 12-character password for new users
 
 Saves credentials securely in /var/secure/user_passwords.txt with chmod 600
 
-4.Home Directory Management
+4.Home Directory Management:
 
 Ensures /home/username exists
 
@@ -45,7 +46,7 @@ Applies secure permissions (700)
 
 Assigns correct ownership
 
-4.Logging
+5.Logging:
 
 Logs all actions (success, errors, skips) to:
 
@@ -55,7 +56,7 @@ Automatically copies the log to the project folder for documentation:
 
 sample_output/user_management.log.sample
 
-5.Fully Commented Script
+6.Fully Commented Script:
 
 Every major function and command is documented inside the script.
 
@@ -91,8 +92,11 @@ username;group1,group2,group3
 Example:
 
 # Dev Team Users
+
 light; sudo,dev,www-data
+
 siyoni; sudo
+
 manoj; dev,www-data
 
 Rules:
@@ -107,7 +111,7 @@ Groups may be empty (allowed)
 
 # How the Script Works (Step-by-Step)
 
-1️.Pre-checks
+1️.Pre-checks:
 
 Must be run as root
 
@@ -119,7 +123,7 @@ Creates secure files:
 
 /var/log/user_management.log (600)
 
-2️.Reads Each Line
+2️.Reads Each Line:
 
 Removes whitespace
 
@@ -127,13 +131,13 @@ Skips comments and empty lines
 
 Extracts username and groups
 
-3️.Group Handling
+3️.Group Handling:
 
 Ensures all listed groups exist
 
 Creates missing groups automatically
 
-4️.User Handling
+4️.User Handling:
 
 When the user does not exist:
 
@@ -159,7 +163,7 @@ Corrects home directory permissions
 
 Logs the action
 
-5️.Logging
+5️.Logging:
 
 Every action is logged with timestamps:
 
@@ -182,13 +186,18 @@ sudo ./create_users.sh employees.txt
 
 # Design View
 
-1.High-Level Architecture
+1.High-Level Architecture:
 
  ┌──────────────────────────────────────────┐
+
  │           employees.txt Input            │
+
  └──────────────────────────────────────────┘
+
                     │
+
                     ▼
+
  ┌──────────────────────────────────────────┐
  │          create_users.sh Script          │
  └──────────────────────────────────────────┘
@@ -213,7 +222,8 @@ sudo ./create_users.sh employees.txt
         │  sample_output/log.sample  │
         └────────────────────────────┘
 
-2.Core Components
+2.Core Components:
+
 A) Input Layer
 
 Reads the employees.txt file
@@ -228,7 +238,7 @@ username
 
 group list
 
-B) Processing Layer
+B) Processing Layer:
 
 Handles all system operations:
 
