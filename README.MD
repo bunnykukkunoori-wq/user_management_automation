@@ -62,6 +62,7 @@ Every major function and command is documented inside the script.
 
 # Project Structure
 
+```
 users management/
 ├── create_users.sh
 ├── employees.txt
@@ -69,6 +70,8 @@ users management/
 ├── user_management.log
 └── sample_output/
     └── user_management.log.sample
+```
+
 
 
 # Files Explained
