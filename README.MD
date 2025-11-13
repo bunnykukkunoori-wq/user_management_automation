@@ -223,13 +223,13 @@ A clean copy for documentation or submission.
 
 # Purpose of the Script
 
-####★ Automate large-scale user provisioning
+#### ★ Automate large-scale user provisioning
 
 Instead of manually creating users and groups one by one, the script reads from an employees.txt file and automatically handles every user entry.Automate large-scale user provisioning
 
 Instead of manually creating users and groups one by one, the script reads from an employees.txt file and automatically handles every user entry.
 
-####★ Ensure system consistency
+#### ★ Ensure system consistency
 
 Every user is created with:
 
@@ -241,7 +241,7 @@ A secure home directory.
 
 Proper ownership and permissions.
 
-####★ Generate and store secure passwords
+#### ★ Generate and store secure passwords
 
 For new users, the script:
 
@@ -249,7 +249,7 @@ Creates a strong random password.
 
 Stores it safely in passwords.txt (root-only access).
 
-####★ Maintain a detailed audit trail
+#### ★ Maintain a detailed audit trail
 
 A complete timestamped log is generated in:
 
@@ -259,7 +259,7 @@ sample_output/user_management.log.sample
 
 This is critical for compliance, debugging, and review.
 
-####★ Handle WSL safely
+#### ★ Handle WSL safely
 
 Because WSL does not allow modifying system passwords via /etc/shadow, the script:
 
