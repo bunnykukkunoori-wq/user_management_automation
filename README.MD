@@ -221,6 +221,86 @@ Full detailed log with timestamps.
 
 A clean copy for documentation or submission.
 
+# Security Considerations
+
+Security is a core focus of this user automation project.
+
+The script manages sensitive account information, so several precautions are implemented to 
+
+ensure safe and secure operation.
+
+#### 1.Password Protection:
+
+Generated passwords are stored only in:
+
+passwords.txt
+
+This file is created with:
+
+chmod 600
+
+meaning only the root user can read/write the file.
+
+Passwords are never printed on the terminal.
+
+#### 2.Limited Exposure in Logs:
+
+The main log user_management.log does not contain passwords.
+
+Only operational messages are logged (user actions, group creation, errors).
+
+A documentation copy (sample_output/user_management.log.sample) is also password-free.
+
+#### 3.WSL Password Handling:
+
+WSL cannot update /etc/shadow for new users reliably.
+
+To avoid security or system corruption issues, the script intentionally:
+
+Detects WSL
+
+Does not apply system passwords
+
+Only stores them securely in passwords.txt
+
+#### 4.Secure Home Directory Permissions:
+
+Each user’s home directory is created or corrected with:
+
+chmod 700
+
+
+This ensures only the user has access to their home folder.
+
+#### 5.Safe Group & Username Handling:
+
+Whitespace and invalid formats are ignored.
+
+Uppercase group names are automatically normalized to lowercase.
+
+Script prevents injection or malformed username abuse by validating structure.
+
+#### 6.Least Privilege:
+
+Only sudo/root can run the script.
+
+No unsafe operations are executed for non-root users.
+
+#### 7.Cleanup Recommendation:
+
+After distributing account credentials, delete the password file:
+
+sudo rm passwords.txt
+
+or archive it securely in offline storage.
+
+#### 8.No External Dependencies:
+
+Script does not connect to the internet.
+
+No external binaries are downloaded.
+
+Everything runs locally inside WSL, reducing attack surface.
 
 # Sample Log Output
 
@@ -257,87 +337,6 @@ A clean copy for documentation or submission.
 2025-11-12 16:15:24 - ===== User provisioning completed =====
 
 2025-11-12 16:15:24 - Copied log output to sample_output/user_management.log.sample for review.
-
-# Security Considerations
-
-Security is a core focus of this user automation project.
-
-The script manages sensitive account information, so several precautions are implemented to 
-
-ensure safe and secure operation.
-
-#### 1.Password Protection
-
-Generated passwords are stored only in:
-
-passwords.txt
-
-This file is created with:
-
-chmod 600
-
-meaning only the root user can read/write the file.
-
-Passwords are never printed on the terminal.
-
-#### 2.Limited Exposure in Logs
-
-The main log user_management.log does not contain passwords.
-
-Only operational messages are logged (user actions, group creation, errors).
-
-A documentation copy (sample_output/user_management.log.sample) is also password-free.
-
-3.WSL Password Handling
-
-WSL cannot update /etc/shadow for new users reliably.
-
-To avoid security or system corruption issues, the script intentionally:
-
-Detects WSL
-
-Does not apply system passwords
-
-Only stores them securely in passwords.txt
-
-4.Secure Home Directory Permissions
-
-Each user’s home directory is created or corrected with:
-
-chmod 700
-
-
-This ensures only the user has access to their home folder.
-
-5.Safe Group & Username Handling
-
-Whitespace and invalid formats are ignored.
-
-Uppercase group names are automatically normalized to lowercase.
-
-Script prevents injection or malformed username abuse by validating structure.
-
-6.Least Privilege
-
-Only sudo/root can run the script.
-
-No unsafe operations are executed for non-root users.
-
- 7.Cleanup Recommendation
-
-After distributing account credentials, delete the password file:
-
-sudo rm passwords.txt
-
-or archive it securely in offline storage.
-
-8.No External Dependencies
-
-Script does not connect to the internet.
-
-No external binaries are downloaded.
-
-Everything runs locally inside WSL, reducing attack surface.
 
 # Author
 
