@@ -60,7 +60,7 @@ sample_output/user_management.log.sample
 
 Every major function and command is documented inside the script.
 
-#Project Structure
+# Project Structure
 
 user-management-automation/
 ├── create_users.sh
@@ -73,11 +73,11 @@ user-management-automation/
 
 | File                                      | Purpose                                  |
 |-------------------------------------------|------------------------------------------|
-| `create_users.sh`                         | Main automation script |
-| `employees.txt`                           | Input file containing usernames & groups |
-| `passwords.txt`                           | Generated passwords for new users        |
-| `user_management.log`                     | Full activity log                        |
-| `sample_output/user_management.log.sample`| Log copy for documentation    
+| create_users.sh                           | Main automation script                   |
+| employees.txt                             | Input file containing usernames & groups |
+| passwords.txt                             | Generated passwords for new users        |
+| user_management.log                       | Full activity log                        |
+| sample_output/user_management.log.sample  | Log copy for documentation               |
 
 # Input File Format (employees.txt)
 
@@ -202,25 +202,17 @@ B) Processing Layer:
 
 Handles all system operations:
 
-Component	                                 Responsibility
-
-User Validator	                          Checks if user exists already
-
-Group Manager	                          Creates missing groups
-
-User Creator	                          Creates new system user accounts
-
-Group Assigner	                          Adds user to all specified groups
-
-Home Directory Manager	                  Ensures /home/username exists
-
-Permission Fixer	                      Sets secure permissions (700)
-
-Password Generator	                      Generates 12-character password
-
-Password Handler	                      Stores password safely (WSL compliant)
-
-Logger	                                  Records all actions with timestamp
+| Component                 | Responsibility                               |
+|---------------------------|-----------------------------------------------|
+| User Validator            | Checks if user exists already                |
+| Group Manager             | Creates missing groups                       |
+| User Creator              | Creates new system user accounts             |
+| Group Assigner            | Adds user to all specified groups            |
+| Home Directory Manager    | Ensures `/home/username` exists              |
+| Permission Fixer          | Sets secure permissions (`700`)              |
+| Password Generator        | Generates 12-character password              |
+| Password Handler          | Stores password safely (WSL compliant)       |
+| Logger                    | Records all actions with timestamp           |
 
 C) Output Layer
 
