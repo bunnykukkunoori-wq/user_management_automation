@@ -1,4 +1,4 @@
-#User Management Automation (SysOps Challenge)
+ # User Management Automation (SysOps Challenge)
 
 This project provides an automated way to create and manage Linux user accounts using a bash script.
 
