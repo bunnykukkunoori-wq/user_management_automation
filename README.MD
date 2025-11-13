@@ -62,12 +62,14 @@ Every major function and command is documented inside the script.
 
 # Project Structure
 
-user-management-automation/
+users management/
 ├── create_users.sh
 ├── employees.txt
-├── README.md
+├── passwords.txt
+├── user_management.log
 └── sample_output/
     └── user_management.log.sample
+
 
 # Files Explained
 
@@ -182,9 +184,7 @@ sudo ./create_users.sh employees.txt
 
 # Design View
 
-1.Core Components:
-
-A) Input Layer
+# A) Input Layer
 
 Reads the employees.txt file
 
@@ -198,7 +198,7 @@ username
 
 group list
 
-B) Processing Layer:
+# B) Processing Layer:
 
 Handles all system operations:
 
@@ -214,7 +214,7 @@ Handles all system operations:
 | Password Handler          | Stores password safely (WSL compliant)       |
 | Logger                    | Records all actions with timestamp           |
 
-C) Output Layer
+# C) Output Layer
 
 Creates 3 output files:
 
@@ -231,7 +231,7 @@ Full detailed log with timestamps.
 A clean copy for documentation or submission.
 
 
-#Sample Log Output
+# Sample Log Output
 
 2025-11-12 16:15:22 - ===== Starting user provisioning from 'employees.txt' =====
 
