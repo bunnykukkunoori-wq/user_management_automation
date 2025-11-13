@@ -266,7 +266,7 @@ The script manages sensitive account information, so several precautions are imp
 
 ensure safe and secure operation.
 
-1.Password Protection
+#### 1.Password Protection
 
 Generated passwords are stored only in:
 
@@ -280,7 +280,7 @@ meaning only the root user can read/write the file.
 
 Passwords are never printed on the terminal.
 
-2.Limited Exposure in Logs
+#### 2.Limited Exposure in Logs
 
 The main log user_management.log does not contain passwords.
 
