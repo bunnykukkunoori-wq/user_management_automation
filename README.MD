@@ -16,7 +16,7 @@ It is designed for SysOps, DevOps, and IT administrators who need to onboard mul
 
 5.Generates documentation-ready sample log output
 
-#Features
+# Features
 1.Automated User Creation
 
 Reads entries from an input file in the format:
@@ -68,7 +68,7 @@ user-management-automation/
 └── sample_output/
     └── user_management.log.sample
 
-#Files Explained
+# Files Explained
 
 File	                                                 Purpose
 
@@ -82,7 +82,7 @@ user_management.log	                                Full activity log
 
 sample_output/user_management.log.sample	        Log copy for documentation
 
-#Input File Format (employees.txt)
+# Input File Format (employees.txt)
 
 Each non-comment line contains:
 
@@ -105,7 +105,7 @@ Groups are comma-separated
 
 Groups may be empty (allowed)
 
-#How the Script Works (Step-by-Step)
+# How the Script Works (Step-by-Step)
 
 1️.Pre-checks
 
@@ -170,7 +170,7 @@ A copy of the exact log is exported to:
 
 sample_output/user_management.log.sample
 
-#How to Run the Script
+# How to Run the Script
 
 1.Make script executable
 
@@ -180,7 +180,7 @@ chmod +x create_users.sh
 
 sudo ./create_users.sh employees.txt
 
-#Design View
+# Design View
 
 1.High-Level Architecture
 
@@ -305,7 +305,7 @@ A clean copy for documentation or submission.
 
 2025-11-12 16:15:24 - Copied log output to sample_output/user_management.log.sample for review.
 
-#Security Considerations
+# Security Considerations
 
 Security is a core focus of this user automation project.
 
@@ -389,7 +389,7 @@ No external binaries are downloaded.
 
 Everything runs locally inside WSL, reducing attack surface.
 
-#Author
+# Author
 
 Name: Bunny Kukkunoori
 
