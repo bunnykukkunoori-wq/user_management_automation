@@ -6,15 +6,15 @@ It is designed for SysOps, DevOps, and IT administrators who need to onboard mul
 
 # The script reads a user input file and automatically:
 
-✦ Creates users and required groups
+✦ Creates users and required groups.
 
-✦ Sets secure passwords
+✦ Sets secure passwords.
 
-✦ Configures home directories
+✦ Configures home directories.
 
-✦ Logs all actions
+✦ Logs all actions.
 
-✦ Generates documentation-ready sample log output
+✦ Generates documentation-ready sample log output.
 
 # Features
 
@@ -24,29 +24,29 @@ Reads entries from an input file in the format:
 
 username;group1,group2,group3
 
-2.Group Management:
+#### 2.Group Management:
 
-Creates missing groups
+Creates missing groups.
 
-Adds users to secondary groups
+Adds users to secondary groups.
 
-Handles existing users gracefully
+Handles existing users gracefully.
 
-3.Secure Password Generation:
+#### 3.Secure Password Generation:
 
-Creates a random 12-character password for new users
+Creates a random 12-character password for new users.
 
-Saves credentials securely in /var/secure/user_passwords.txt with chmod 600
+Saves credentials securely in /var/secure/user_passwords.txt with chmod 600.
 
-4.Home Directory Management:
+#### 4.Home Directory Management:
 
 Ensures /home/username exists
 
-Applies secure permissions (700)
+Applies secure permissions (700).
 
-Assigns correct ownership
+Assigns correct ownership.
 
-5.Logging:
+#### 5.Logging:
 
 Logs all actions (success, errors, skips) to:
 
@@ -56,7 +56,7 @@ Automatically copies the log to the project folder for documentation:
 
 sample_output/user_management.log.sample
 
-6.Fully Commented Script:
+#### 6.Fully Commented Script:
 
 Every major function and command is documented inside the script.
 
@@ -104,19 +104,19 @@ manoj; dev,www-data
 
 ● Whitespace is ignored
 
-● Lines beginning with # are ignored
+● Lines beginning with # are ignored.
 
-● Groups are comma-separated
+● Groups are comma-separated.
 
-● Groups may be empty (allowed)
+● Groups may be empty (allowed).
 
-# How the Script Works (Step-by-Step)
+# How the Script Works (Step-by-Step).
 
-● Pre-checks:
+#### ● Pre-checks:
 
-Must be run as root
+Must be run as root.
 
-Input file must exist
+Input file must exist.
 
 Creates secure files:
 
@@ -124,7 +124,7 @@ Creates secure files:
 
 /var/log/user_management.log (600)
 
-● Reads Each Line:
+#### ● Reads Each Line:
 
 Removes whitespace
 
@@ -132,13 +132,13 @@ Skips comments and empty lines
 
 Extracts username and groups
 
-● Group Handling:
+#### ● Group Handling:
 
 Ensures all listed groups exist
 
 Creates missing groups automatically
 
-● User Handling:
+#### ● User Handling:
 
 When the user does not exist:
 
@@ -152,19 +152,7 @@ Sets owner + permissions
 
 Generates a strong password
 
-Stores credentials securely
-
-When the user already exists:
-
-Does not reset password
-
-Ensures group membership
-
-Corrects home directory permissions
-
-Logs the action
-
-● Logging:
+#### ● Logging:
 
 Every action is logged with timestamps:
 
